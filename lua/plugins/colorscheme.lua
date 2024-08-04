@@ -1,6 +1,27 @@
+if false then
+  return {}
+end
 return {
---  { "navarasu/onedark.nvim" },
-  { "olimorris/onedarkpro.nvim" },
+  {
+    "navarasu/onedark.nvim",
+    opts = {
+      style = "dark",
+      colors = {
+        white = "#cccccc",
+      },
+      highlights = {
+        ["@punctuation.bracket.php"] = { fg = "$white" },
+        ["@punctuation.delimiter.php"] = { fg = "$white" },
+        ["@variable"] = { fg = "$red" },
+        ["@variable.member.php"] = { fg = "$red" },
+        ["@property.php"] = { fg = "$red" },
+        ["@operator"] = { fg = "$purple" },
+        ["@type.builtin.php"] = { fg = "$purple" },
+        ["@constructor"] = { fg = "$cyan" },
+      },
+    },
+  },
+  --{ "olimorris/onedarkpro.nvim" },
 
   -- Configure LazyVim to load gruvbox
   {
