@@ -18,6 +18,7 @@ return {
         ["@operator"] = { fg = "$purple" },
         ["@type.builtin.php"] = { fg = "$purple" },
         ["@constructor"] = { fg = "$cyan" },
+        ["NeoTreeFileName"] = { fg = "$white" },
       },
     },
   },
