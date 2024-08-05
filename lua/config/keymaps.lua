@@ -3,10 +3,14 @@
 -- Add any additional keymaps here
 vim.keymap.set("n", "<A-j>", "<cmd>m .+1<cr>==", { desc = "Move Down" })
 vim.keymap.set("n", "<A-k>", "<cmd>m .-2<cr>==", { desc = "Move Up" })
+
 vim.keymap.set("i", "<A-k>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move Up" })
 vim.keymap.set("i", "<A-j>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move Down" })
+
 vim.keymap.set("v", "<A-j>", ":m '>+1<cr>gv=gv", { desc = "Move Down", silent = true })
 vim.keymap.set("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move Up", silent = true })
+vim.keymap.set("v", "<A-h>", "<gv", { desc = "Decrease Indent", silent = true })
+vim.keymap.set("v", "<A-l>", ">gv", { desc = "Increase Indent", silent = true })
 
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
@@ -28,3 +32,5 @@ vim.keymap.set("n", "<C-PageUp>", "<cmd>bprev<CR>")
 vim.keymap.set("n", "<C-f>", "<cmd>lua vim.lsp.buf.hover()<cr>")
 
 vim.keymap.set("n", "<leader>nb", ":! npm run build<CR>")
+vim.keymap.set("n", "<leader>jf", ":%!jq .<CR>")
+vim.keymap.set("n", "<leader>jc", ":%!jq -c .<CR>")
