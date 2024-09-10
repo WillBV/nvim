@@ -35,3 +35,5 @@ vim.keymap.set("n", "<C-f>", "<cmd>lua vim.lsp.buf.hover()<cr>")
 vim.keymap.set("n", "<leader>nb", "<cmd>lua vim.print('Building...') vim.fn.jobstart('npm run build', {stdout_buffered = true, on_stdout = function() vim.print('Build Complete') end,})<CR>")
 vim.keymap.set("n", "<leader>jf", ":%!jq .<CR>")
 vim.keymap.set("n", "<leader>jc", ":%!jq -c .<CR>")
+
+vim.keymap.set("n", "<leader>h", "*N")
