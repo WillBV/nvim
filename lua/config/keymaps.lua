@@ -37,3 +37,6 @@ vim.keymap.set("n", "<leader>jf", ":%!jq .<CR>")
 vim.keymap.set("n", "<leader>jc", ":%!jq -c .<CR>")
 
 vim.keymap.set("n", "<leader>h", "*N")
+
+vim.keymap.set("n", "<leader>xd", "oini_set('xdebug.var_display_max_depth', -1);<CR>ini_set('xdebug.var_display_max_children', -1);<CR>ini_set('xdebug.var_display_max_data', -1);<CR><esc>")
+vim.keymap.set("n", "<leader>xD", "Oini_set('xdebug.var_display_max_depth', -1);<CR>ini_set('xdebug.var_display_max_children', -1);<CR>ini_set('xdebug.var_display_max_data', -1);<CR><esc>")
